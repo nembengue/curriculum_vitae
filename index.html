@@ -1,427 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ndeye-Emilie Mbengue– AI, NLP & Knowledge Representation</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ndeye-Emilie Mbengue | PhD Student in Computer Science</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --text: #333;
+            --light: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            background-color: var(--light);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+            margin-bottom: 20px;
+        }
+
+        h1 { margin: 10px 0; color: var(--primary); }
+        .subtitle { font-size: 1.2rem; color: var(--accent); font-weight: bold; }
+        
+        .contact-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .contact-links i { color: var(--accent); margin-right: 5px; }
+
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+        }
+
+        h2 i { margin-right: 15px; }
+
+        .item { margin-bottom: 25px; }
+        .item-header { display: flex; justify-content: space-between; font-weight: bold; color: var(--primary); }
+        .location-date { color: #7f8c8d; font-size: 0.9rem; }
+        
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background: #ebf5fb;
+            color: #2980b9;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            border: 1px solid #d6eaf8;
+        }
+
+        @media (max-width: 600px) {
+            .item-header { flex-direction: column; }
+            .container { padding: 10px; }
+        }
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-content">
-      <div>
-        <h1>Your Name</h1>
-        <p class="tagline">
-          PhD student in Computer Science · Semantic Web · Knowledge Graphs · NLP
-        </p>
-        <p class="location">Based in Nancy & Côte d’Azur, France</p>
-        <div class="header-links">
-          <!-- Replace links with your real information -->
-          <a href="mailto:your.email@example.com">Email</a>
-          <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://scholar.google.com/citations?user=YOURID" target="_blank" rel="noopener">Google Scholar</a>
-          <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener">ORCID</a>
-          <a href="cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
-          <a href="#contact">Contact</a>
+
+<div class="container">
+    <header>
+        <img src="profile.jpg" alt="Ndeye-Emilie Mbengue" class="profile-img">
+        <h1>Ndeye-Emilie Mbengue</h1>
+        <div class="subtitle">PhD Student in Computer Science - INRIA / Université Côte d’Azur</div>
+        
+        <div class="contact-links">
+            <a href="mailto:emiliembengue62@gmail.com"><i class="fas fa-envelope"></i> emiliembengue62@gmail.com</a>
+            <a href="tel:+33781206616"><i class="fas fa-phone"></i> +33 7 81 20 66 16</a>
+            <a href="https://www.linkedin.com/in/mbengue" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.github.com/lielie-dot2" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <nav class="site-nav">
-    <div class="container nav-inner">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#talks">Talks & Service</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+    <section class="section">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        
+        <div class="item">
+            <div class="item-header">
+                <span>PhD in Computer Science - INRIA</span>
+                <span class="location-date">2024 - Present</span>
+            </div>
+            <p>Research focus: Abstraction and analogical reasoning for improving knowledge representation in low-resource languages.</p>
+            <div class="tags">
+                <span class="tag">Semantic Web</span><span class="tag">AI</span><span class="tag">NLP</span><span class="tag">Knowledge Graphs</span>
+            </div>
+        </div>
 
-  <main class="container">
+        <div class="item">
+            <div class="item-header">
+                <span>TELECOM Nancy - Engineering Degree (M.Sc.)</span>
+                <span class="location-date">2021 - 2024</span>
+            </div>
+            <p>Major in Artificial Intelligence and Big Data. Graduate degree in Computer Science and Digital Sciences.</p>
+        </div>
 
-    <!-- About -->
-    <section id="about" class="card">
-      <h2>About</h2>
-      <p>
-        I am a PhD student in Computer Science at INRIA and Université Côte d’Azur. 
-        My research focuses on <strong>abstraction and analogical reasoning</strong> for improving 
-        <strong>knowledge representation in low-resource languages</strong>, with a particular emphasis 
-        on knowledge graphs and the Semantic Web.
-      </p>
-      <p>
-        More broadly, my interests lie at the intersection of 
-        <strong>Semantic Web, Knowledge Graphs, Artificial Intelligence, Machine Learning,</strong> and 
-        <strong>Natural Language Processing (NLP)</strong>. I enjoy working on approaches that combine 
-        <em>symbolic</em> and <em>neural</em> methods for reasoning and representation learning.
-      </p>
-      <p>
-        You can find a detailed overview of my background in my 
-        <a href="cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>.
-      </p>
+        <div class="item">
+            <div class="item-header">
+                <span>Technical University of Madrid (UPM)</span>
+                <span class="location-date">2023 - 2024</span>
+            </div>
+            <p>International exchange program: Advanced courses in Optimization, Time Series, Deep Learning, and Statistics.</p>
+        </div>
     </section>
 
-    <!-- Research -->
-    <section id="research" class="card">
-      <h2>Research & PhD</h2>
+    <section class="section">
+        <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+        
+        <div class="item">
+            <div class="item-header">
+                <span>LORIA - Research Engineer (AT2TA Project)</span>
+                <span class="location-date">Nov 2024 - Jan 2026</span>
+            </div>
+            <ul>
+                <li>Maintained a software platform for pruning Wikidata knowledge graphs using analogical classification models.</li>
+                <li>Trained Deep Learning models (LSTM, CNN, BERT) for analogy detection.</li>
+                <li>Submitted a research paper to the IARML workshop at IJCAI.</li>
+            </ul>
+            <div class="tags">
+                <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">SPARQL</span><span class="tag">Docker</span><span class="tag">Singularity</span>
+            </div>
+        </div>
 
-      <h3>PhD in Computer Science – Université Côte d’Azur / INRIA</h3>
-      <p class="meta">
-        <span>Oct 2025 – Oct 2026 (1st year)</span> · Université Côte d’Azur, France
-      </p>
-      <p>
-        Topic: <strong>Abstraction and analogical reasoning for improving knowledge representation 
-        in low-resource languages</strong>.
-      </p>
-      <ul>
-        <li>Semantic Web & knowledge graphs</li>
-        <li>Analogical reasoning & analogical classifiers</li>
-        <li>Graph representation learning (knowledge graph embeddings)</li>
-        <li>NLP for low-resource languages</li>
-      </ul>
-
-      <h3>Research Directions</h3>
-      <ul>
-        <li>Designing analogical classification models for structured knowledge.</li>
-        <li>Studying pair competence and robustness of analogical models.</li>
-        <li>Integrating symbolic constraints into neural representations.</li>
-      </ul>
+        <div class="item">
+            <div class="item-header">
+                <span>Orange Innovation - Research Intern (Frugal AI)</span>
+                <span class="location-date">2024 (6 months)</span>
+            </div>
+            <ul>
+                <li>Analyzed the environmental impact of digital services (LCA, ISO standards).</li>
+                <li>Prompt engineering and fine-tuning LLMs (GPT-4, Llama 3, Mistral).</li>
+                <li>Explored energy optimization techniques: LoRA, Early stopping, Pruning.</li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Publications -->
-    <section id="publications" class="card">
-      <h2>Publications</h2>
-
-      <p class="meta">
-        For the most up-to-date list, see my 
-        <a href="https://scholar.google.com/citations?user=YOURID" target="_blank" rel="noopener">
-          Google Scholar profile
-        </a>.
-      </p>
-
-      <ul>
-        <!-- Example entry – replace with your real paper details -->
-        <li>
-          <strong>Title of your submitted paper</strong> (submitted)  
-          Your Name, Co-author Name, Co-author Name.  
-          <em>IARML Workshop on Analogy Reasoning @ IJCAI, 20XX.</em>
-        </li>
-      </ul>
-
-      <!-- You can add preprints / theses as separate categories if you like -->
-      <!--
-      <h3>Preprints</h3>
-      <ul>
-        <li>…</li>
-      </ul>
-      -->
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="card">
-      <h2>Professional Experience</h2>
-
-      <article class="experience-item">
-        <h3>Research Engineer – LORIA (ANR AT2TA)</h3>
-        <p class="meta">
-          <span>Nov 2024 – Jan 2026</span> · Nancy, France
-        </p>
-        <ul>
-          <li>
-            Maintenance of a platform for <strong>knowledge graph pruning</strong> based on 
-            analogical classification using Wikidata 
-            (SPARQL, LMDB, D3.js, JavaScript, Docker, Python, Singularity).
-          </li>
-          <li>
-            Dataset creation and cleaning (Python, Pandas, Numpy, Scikit-learn).
-          </li>
-          <li>
-            Optimization and training of <strong>knowledge graph embedding models</strong> 
-            (PyKEEN, Pytorch BigGraph, TensorFlow).
-          </li>
-          <li>
-            Training and evaluation of Deep Learning architectures (LSTM, MLP, CNN) for 
-            <strong>analogy detection</strong>.
-          </li>
-          <li>
-            Training BERT and CNN models for 
-            <strong>Target Sense Verification (TSV)</strong>.
-          </li>
-        </ul>
-      </article>
-
-      <article class="experience-item">
-        <h3>Research Intern – Orange Innovation</h3>
-        <p class="meta">
-          <span>2024 (6 months)</span> · Châtillon, France
-        </p>
-        <ul>
-          <li>
-            Literature review on methods for assessing the 
-            <strong>environmental impact of digital services</strong> 
-            (LCA, ISO standards).
-          </li>
-          <li>
-            Prompt engineering and usage of generative models 
-            (GPT-4, Llama3 8B, Mistral 7B) and non-generative models 
-            (BERT, DistilBERT).
-          </li>
-          <li>
-            Use of CodeCarbon, PyTorch, TensorFlow, and TensorBoard to analyze 
-            <strong>energy consumption</strong> of AI architectures (Transformers, LLMs).
-          </li>
-          <li>
-            Setup of execution environments (Conda, Docker), version control with Git.
-          </li>
-          <li>
-            Exploration of <strong>low-carbon AI strategies</strong> for fine-tuning and inference 
-            (LoRA, early stopping, pruning).
-          </li>
-        </ul>
-      </article>
-
-      <article class="experience-item">
-        <h3>Junior Data Scientist Intern – Orange Senegal</h3>
-        <p class="meta">
-          <span>2023 (3 months)</span> · Dakar, Senegal
-        </p>
-        <ul>
-          <li>
-            Designed supervised and unsupervised learning models 
-            (XGBoost, Logistic Regression, Random Forest, K-Means, PCA) 
-            using Scikit-learn, Pandas & Imbalanced-learn to 
-            <strong>predict customer Quality of Experience</strong>.
-          </li>
-          <li>
-            Built an API for the model using HTML, Flask, JavaScript, and CSS.
-          </li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="card">
-      <h2>Selected Academic Projects</h2>
-
-      <article class="project-item">
-        <h3>All-Sky Camera Calibration</h3>
-        <p class="meta">Research Project (5 months) – CRAN, Nancy</p>
-        <ul>
-          <li>
-            Bibliographic review on the use of All-Sky cameras and coordinate systems for 
-            solar position tracking.
-          </li>
-          <li>
-            Automatic sun detection in images and projection into astronomical coordinate 
-            systems (Matlab, Python).
-          </li>
-          <li>
-            Real-time comparison with reference data (web scraping using Selenium) and 
-            automatic camera calibration.
-          </li>
-          <li>
-            Evaluation of measurement quality and scientific documentation.
-          </li>
-        </ul>
-      </article>
-
-      <article class="project-item">
-        <h3>American Sign Language Letter Recognition</h3>
-        <p class="meta">Computer Vision · CNN</p>
-        <ul>
-          <li>Image preprocessing and formatting (Scikit-learn).</li>
-          <li>
-            Implementation and training of a Convolutional Neural Network with optimal 
-            hyperparameters via Random Search.
-          </li>
-          <li>
-            Evaluation using F-measure and Mean Squared Error (MSE).
-          </li>
-        </ul>
-      </article>
-
-      <article class="project-item">
-        <h3>Sentiment Analysis on Movie Reviews</h3>
-        <p class="meta">NLP · Transformers · BERT & XLNet</p>
-        <ul>
-          <li>Text preprocessing and tokenization of IMDB reviews.</li>
-          <li>
-            Fine-tuning BERT and XLNet for rating prediction 
-            (Pandas, PyTorch, TensorFlow, Scikit-learn, SQLite).
-          </li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- Teaching -->
-    <section id="teaching" class="card">
-      <h2>Teaching</h2>
-
-      <p class="meta">
-        I am interested in teaching topics related to AI, Machine Learning, and Programming.
-      </p>
-
-      <ul>
-        <!-- Replace with real teaching when you have it -->
-        <li>
-          <strong>Volunteer tutoring</strong> (Mathematics and Physics)  
-          Support for high school / undergraduate students – mentoring and exam preparation.
-        </li>
-        <!-- Example of future entries:
-        <li>
-          Teaching assistant, "Introduction to Machine Learning" – Université Côte d’Azur, 20XX.
-        </li>
-        -->
-      </ul>
-    </section>
-
-    <!-- Talks & Service -->
-    <section id="talks" class="card">
-      <h2>Talks & Academic Service</h2>
-
-      <h3>Talks</h3>
-      <ul>
-        <!-- Add talks when you have them -->
-        <li>
-          (To be added) Research talks and seminar presentations.
-        </li>
-      </ul>
-
-      <h3>Service & Community</h3>
-      <ul>
-        <li>
-          Communication Assistant for the <strong>Anim’Est</strong> association at TELECOM Nancy (2021–2023): 
-          event promotion and digital communication.
-        </li>
-        <li>
-          Volunteer teaching (mathematics, physics).
-        </li>
-      </ul>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="card">
-      <h2>Skills</h2>
-      <div class="skills-grid">
+    <section class="section" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
         <div>
-          <h3>Programming Languages</h3>
-          <ul>
-            <li>Python, R, Matlab</li>
-            <li>Java, C, JavaScript</li>
-          </ul>
+            <h2><i class="fas fa-code"></i> Technologies</h2>
+            <div class="tags">
+                <span class="tag">Python</span><span class="tag">R</span><span class="tag">Java</span><span class="tag">Tensorflow</span><span class="tag">PyTorch</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span><span class="tag">SQL</span>
+            </div>
         </div>
         <div>
-          <h3>Data & Machine Learning</h3>
-          <ul>
-            <li>TensorFlow, PyTorch, PyKEEN</li>
-            <li>Pandas, Numpy, Scikit-learn, Seaborn</li>
-            <li>Imbalanced-learn</li>
-          </ul>
+            <h2><i class="fas fa-language"></i> Languages</h2>
+            <ul>
+                <li><strong>English:</strong> C1 Level</li>
+                <li><strong>Spanish:</strong> B2 Level</li>
+                <li><strong>French:</strong> Native / Bilingual</li>
+            </ul>
         </div>
-        <div>
-          <h3>Systems & DevOps</h3>
-          <ul>
-            <li>Docker, Singularity, Apptainer</li>
-            <li>SLURM, OAR</li>
-            <li>Git, Conda</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Web & Visualization</h3>
-          <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>D3.js</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Languages</h3>
-          <ul>
-            <li>French: Native</li>
-            <li>English: C1</li>
-            <li>Spanish: B2</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>Scientific communication</li>
-            <li>Teamwork in research environments</li>
-            <li>Autonomy & initiative</li>
-          </ul>
-        </div>
-      </div>
     </section>
+</div>
 
-    <!-- Education -->
-    <section id="education" class="card">
-      <h2>Education</h2>
-
-      <article class="edu-item">
-        <h3>PhD in Computer Science – Université Côte d’Azur</h3>
-        <p class="meta">Oct 2025 – Oct 2026 (ongoing) · France</p>
-        <p>
-          Research on analogical reasoning and abstraction for low-resource languages. 
-          Semantic Web, AI, ML, reasoning, NLP.
-        </p>
-      </article>
-
-      <article class="edu-item">
-        <h3>Engineering Degree – TELECOM Nancy</h3>
-        <p class="meta">Sep 2021 – Sep 2024 · Nancy, France</p>
-        <p>
-          Engineering school in Computer Science & Digital Technologies, specialization in 
-          <strong>AI and Big Data</strong>.
-        </p>
-      </article>
-
-      <article class="edu-item">
-        <h3>Exchange Program – Universidad Politécnica de Madrid</h3>
-        <p class="meta">Sep 2023 – Jan 2024 · Madrid, Spain</p>
-        <p>
-          Courses in Optimization, Time Series, Deep Learning & Advanced Statistics.
-        </p>
-      </article>
-
-      <article class="edu-item">
-        <h3>Preparatory Classes (MPSI–MP) – Lycée Chrestien de Troyes</h3>
-        <p class="meta">Sep 2019 – Sep 2021 · Troyes, France</p>
-        <p>
-          Mathematics, Physics, Engineering Sciences.
-        </p>
-      </article>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>
-        Feel free to reach out for collaborations, research projects, academic inquiries, or 
-        opportunities.
-      </p>
-      <ul class="contact-list">
-        <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-        <li>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">linkedin.com/in/your-profile</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Your Name · Powered by GitHub Pages</p>
-    </div>
-  </footer>
-
-  <script>
-    // Updates the footer year automatically
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
-
