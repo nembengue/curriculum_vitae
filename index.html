@@ -11,6 +11,7 @@
             --accent: #3498db;
             --text: #333;
             --light: #f4f7f6;
+            --white: #ffffff;
         }
 
         body {
@@ -27,9 +28,10 @@
             padding: 40px 20px;
         }
 
+        /* Header Section */
         header {
             text-align: center;
-            background: white;
+            background: var(--white);
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -47,6 +49,8 @@
 
         h1 { margin: 10px 0; color: var(--primary); }
         .subtitle { font-size: 1.2rem; color: var(--accent); font-weight: bold; }
+        .subtitle a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s; }
+        .subtitle a:hover { border-bottom: 1px solid var(--accent); }
         
         .contact-links {
             margin-top: 20px;
@@ -60,12 +64,15 @@
             text-decoration: none;
             color: var(--primary);
             font-size: 0.9rem;
+            transition: color 0.3s;
         }
 
+        .contact-links a:hover { color: var(--accent); }
         .contact-links i { color: var(--accent); margin-right: 5px; }
 
+        /* Content Sections */
         .section {
-            background: white;
+            background: var(--white);
             padding: 30px;
             border-radius: 10px;
             margin-bottom: 25px;
@@ -89,6 +96,7 @@
         ul { padding-left: 20px; }
         li { margin-bottom: 8px; }
 
+        /* Tags & Buttons */
         .tags {
             display: flex;
             flex-wrap: wrap;
@@ -105,8 +113,31 @@
             border: 1px solid #d6eaf8;
         }
 
+        .btn-pub {
+            display: inline-block;
+            margin-top: 10px;
+            background: var(--accent);
+            color: white !important;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-pub:hover { background: #2980b9; }
+
+        /* Grid Layout for Skills */
+        .grid-two-col {
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px;
+        }
+
         @media (max-width: 600px) {
             .item-header { flex-direction: column; }
+            .grid-two-col { grid-template-columns: 1fr; }
             .container { padding: 10px; }
         }
     </style>
@@ -117,13 +148,13 @@
     <header>
         <img src="profile.jpg" alt="Ndeye-Emilie Mbengue" class="profile-img">
         <h1>Ndeye-Emilie Mbengue</h1>
-        <div class="subtitle">PhD Student in Computer Science - INRIA / Université Côte d’Azur</div>
+        <div class="subtitle">1st Year PhD Student in Computer Science at <a href="https://team.inria.fr/wimmics/" target="_blank">WIMMICS</a></div>
         
         <div class="contact-links">
-            <a href="mailto:emiliembengue62@gmail.com"><i class="fas fa-envelope"></i> emiliembengue62@gmail.com</a>
+            <a href="mailto:ndeye-emilie.mbengue@inria.fr"><i class="fas fa-envelope"></i> ndeye-emilie.mbengue@inria.fr</a>
             <a href="tel:+33781206616"><i class="fas fa-phone"></i> +33 7 81 20 66 16</a>
             <a href="https://www.linkedin.com/in/mbengue" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://www.github.com/lielie-dot2" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.github.com/nembengue" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         </div>
     </header>
 
@@ -132,10 +163,10 @@
         
         <div class="item">
             <div class="item-header">
-                <span>PhD in Computer Science - INRIA</span>
-                <span class="location-date">2024 - Present</span>
+                <span>PhD in Computer Science - Université Côte d'Azur, INRIA, I3S</span>
+                <span class="location-date">2025 - Present</span>
             </div>
-            <p>Research focus: Abstraction and analogical reasoning for improving knowledge representation in low-resource languages.</p>
+            <p><strong>Title:</strong> Abstraction and analogical reasoning to improve knowledge representation in low-resource languages</p>
             <div class="tags">
                 <span class="tag">Semantic Web</span><span class="tag">AI</span><span class="tag">NLP</span><span class="tag">Knowledge Graphs</span>
             </div>
@@ -146,7 +177,7 @@
                 <span>TELECOM Nancy - Engineering Degree (M.Sc.)</span>
                 <span class="location-date">2021 - 2024</span>
             </div>
-            <p>Major in Artificial Intelligence and Big Data. Graduate degree in Computer Science and Digital Sciences.</p>
+            <p>Specialization in Artificial Intelligence and Big Data. Degree in Computer Science and Digital Sciences obtained Sept 2024.</p>
         </div>
 
         <div class="item">
@@ -154,7 +185,33 @@
                 <span>Technical University of Madrid (UPM)</span>
                 <span class="location-date">2023 - 2024</span>
             </div>
-            <p>International exchange program: Advanced courses in Optimization, Time Series, Deep Learning, and Statistics.</p>
+            <p>International exchange program: Advanced courses in Optimization, Time Series, Deep Learning, and Advanced Statistics.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2><i class="fas fa-book"></i> Publications & Identifiers</h2>
+        
+        <div class="item">
+            <div class="item-header">
+                <span>ORCID iD</span>
+            </div>
+            <p>
+                <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID logo" style="vertical-align: middle; margin-right: 5px;">
+                <a href="https://orcid.org/0009-0002-1289-6417" target="_blank" style="color: var(--primary); text-decoration: none;">0009-0002-1289-6417</a>
+            </p>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>Research Paper</span>
+                <span class="location-date">2025</span>
+            </div>
+            <p><strong>"Which Pairs to Choose? Exploring Analogical Competency for Knowledge Graph Pruning"</strong></p>
+            <p>Submitted to the Workshop on Analogical Reasoning for Machine Learning (IARML@IJCAI).</p>
+            <a href="https://inria.hal.science/hal-05162211/document" target="_blank" class="btn-pub">
+                <i class="fas fa-file-pdf"></i> View on HAL
+            </a>
         </div>
     </section>
 
@@ -163,13 +220,12 @@
         
         <div class="item">
             <div class="item-header">
-                <span>LORIA - Research Engineer (AT2TA Project)</span>
-                <span class="location-date">Nov 2024 - Jan 2026</span>
+                <span>LORIA - Research Engineer (Project ANR AT2TA)</span>
+                <span class="location-date">Nov 2024 - Sep 2025</span>
             </div>
             <ul>
-                <li>Maintained a software platform for pruning Wikidata knowledge graphs using analogical classification models.</li>
-                <li>Trained Deep Learning models (LSTM, CNN, BERT) for analogy detection.</li>
-                <li>Submitted a research paper to the IARML workshop at IJCAI.</li>
+                <li>Software platform maintenance for Wikidata knowledge graph pruning using analogical classification models.</li>
+                <li>Training and evaluation of Deep Learning models (LSTM, CNN, BERT) for analogy detection and Target Sense Verification.</li>
             </ul>
             <div class="tags">
                 <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">SPARQL</span><span class="tag">Docker</span><span class="tag">Singularity</span>
@@ -182,29 +238,29 @@
                 <span class="location-date">2024 (6 months)</span>
             </div>
             <ul>
-                <li>Analyzed the environmental impact of digital services (LCA, ISO standards).</li>
-                <li>Prompt engineering and fine-tuning LLMs (GPT-4, Llama 3, Mistral).</li>
-                <li>Explored energy optimization techniques: LoRA, Early stopping, Pruning.</li>
+                <li>Analysis of the environmental impact of digital services (LCA, ISO standards).</li>
             </ul>
         </div>
     </section>
 
-    <section class="section" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-        <div>
+    <div class="grid-two-col">
+        <section class="section">
             <h2><i class="fas fa-code"></i> Technologies</h2>
             <div class="tags">
-                <span class="tag">Python</span><span class="tag">R</span><span class="tag">Java</span><span class="tag">Tensorflow</span><span class="tag">PyTorch</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span><span class="tag">SQL</span>
+                <span class="tag">Python</span><span class="tag">R</span><span class="tag">Matlab</span><span class="tag">Java</span><span class="tag">Tensorflow</span><span class="tag">PyTorch</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span>
+                <span class="tag">Docker</span><span class="tag">Singularity</span><span class="tag">SLURM</span>
             </div>
-        </div>
-        <div>
+        </section>
+        
+        <section class="section">
             <h2><i class="fas fa-language"></i> Languages</h2>
             <ul>
+                <li><strong>French:</strong> Native</li>
                 <li><strong>English:</strong> C1 Level</li>
                 <li><strong>Spanish:</strong> B2 Level</li>
-                <li><strong>French:</strong> Native / Bilingual</li>
             </ul>
-        </div>
-    </section>
+        </section>
+    </div>
 </div>
 
 </body>
